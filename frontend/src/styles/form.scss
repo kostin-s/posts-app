@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 200px;
+  position: relative;
+}
+
+.form__title,
+.form__text {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.form__title {
+  line-height: 18px;
+}
+
+.form__text {
+  resize: none;
+}
+
+@media (max-height: '420px') {
+  .form {
+    height: 240px;
+  }
+}
+
+@media (max-height: '300px') {
+  .form {
+    height: 200px;
+  }
+}
